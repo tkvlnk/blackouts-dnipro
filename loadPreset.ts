@@ -1,10 +1,9 @@
 import puppeteer from "puppeteer";
 
 export interface SchedulePreset {
-  days: Record<`${number}`, string>;
-  sch_names: Record<`${number}`, string>;
-  time_zone: Record<`${number}`, string>;
-  data: Record<`${number}`, Record<`${number}`, number[]>>;
+  sch_names: Record<string, string>;
+  time_zone: Record<string, string>;
+  data: Record<string, Record<string, number[]>>;
 }
 
 export async function loadPreset(): Promise<SchedulePreset> {
