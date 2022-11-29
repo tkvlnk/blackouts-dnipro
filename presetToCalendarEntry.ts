@@ -1,6 +1,6 @@
-import { EventAttributes, DurationObject } from "ics";
-import { SchedulePreset } from "./loadPreset";
-import { DateTime } from "luxon";
+import {EventAttributes, DurationObject} from "ics";
+import {SchedulePreset} from "./loadPreset";
+import {DateTime} from "luxon";
 
 interface TimeSlot {
   start: {
@@ -20,23 +20,20 @@ export function presetToCalendaEntry(
   const parsedSlots = parseTimeSlots(preset.time_zone);
 
   return Object.fromEntries(
-    Object.entries(preset.data).map(([groupKey, groupDays]) => {
-      const groupName = preset.sch_names[groupKey];
-
-      return [
-        groupName,
+    Object.entries(preset.data).map(([groupKey, groupDays]) =>
+      [
+        groupKey,
         Object.entries(groupDays).flatMap(([day, slots]) =>
           slots.map<EventAttributes>((slotKey) =>
             prepareEvent({
               dayIndex: parseInt(day, 10) - 1,
-              groupName,
+              groupName: preset.sch_names[groupKey],
               weekStart,
               slot: parsedSlots[slotKey.toString()],
             })
           )
         ),
-      ];
-    })
+      ])
   );
 }
 
@@ -45,11 +42,9 @@ function parseTimeSlots(
 ): Record<string, TimeSlot> {
   return Object.fromEntries(
     Object.entries(zones).map(([key, periodStr]) => {
-      const [{ groups: startGroup }, { groups: endGroup }] = periodStr.matchAll(
+      const [{groups: startGroup}, {groups: endGroup}] = periodStr.matchAll(
         /(?<hour>\d\d):(?<minute>\d\d)/g
       );
-
-        
 
       const startHour = parseNumber(startGroup?.hour);
       const endHour = parseNumber(endGroup?.hour);
@@ -68,7 +63,7 @@ function parseTimeSlots(
         minutes: endMinute
       })
 
-      const { hours, minutes } = endDateTime.diff(startDateTime, ['hours', 'minutes']);
+      const {hours, minutes} = endDateTime.diff(startDateTime, ['hours', 'minutes']);
 
       return [
         key,
@@ -88,11 +83,11 @@ function parseTimeSlots(
 }
 
 function prepareEvent({
-  dayIndex,
-  weekStart,
-  groupName,
-  slot,
-}: {
+                        dayIndex,
+                        weekStart,
+                        groupName,
+                        slot,
+                      }: {
   dayIndex: number;
   groupName: string;
   weekStart: DateTime;

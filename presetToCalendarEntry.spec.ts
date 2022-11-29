@@ -39,7 +39,7 @@ it("should pass", () => {
       },
     })
   ).toEqual<ReturnType<typeof presetToCalendaEntry>>({
-    "Група 1": [
+    "1": [
       {
         title: "⚡️ Група 1 - Планове відключення",
         start: [2022, 11, 28, 0],
@@ -56,14 +56,14 @@ it("should pass", () => {
         duration: { hours: 4 },
       },
     ],
-    "Група 2": [
+    "2": [
       {
         title: "⚡️ Група 2 - Планове відключення",
         start: [2022, 11, 28, 0],
         duration: { hours: 1 },
       },
     ],
-    "Група 0": [
+    "0": [
       {
         title: expect.any(String),
         start: [2022, 11, 30, 22, 30],
