@@ -12,12 +12,17 @@ it("should pass", () => {
         },
         "2": {
           "1": [1]
+        },
+        "0": {
+          "3": [10],
+          "7": [11]
         }
       },
       sch_names: {
         "1": "Група 1",
         "2": "Група 2",
         "3": "Група 3",
+        "0": "Група 0",
       },
       time_zone: {
         "1": "00:00 – 01:00",
@@ -29,6 +34,8 @@ it("should pass", () => {
         "7": "15:00 – 19:00",
         "8": "18:00 – 22:00",
         "9": "21:00 – 24:00",
+        "10": "22:30 - 23:00",
+        "11": "23:45 - 01:05",
       },
     })
   ).toEqual<ReturnType<typeof presetToCalendaEntry>>({
@@ -55,6 +62,23 @@ it("should pass", () => {
         start: [2022, 11, 28, 0],
         duration: { hours: 1 },
       },
+    ],
+    "Група 0": [
+      {
+        title: expect.any(String),
+        start: [2022, 11, 30, 22, 30],
+        duration: {
+          minutes: 30
+        }
+      },
+      {
+        title: expect.any(String),
+        start: [2022, 12, 4, 23, 45],
+        duration: {
+          hours: 1,
+          minutes: 20
+        }
+      }
     ]
   });
 });

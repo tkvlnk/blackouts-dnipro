@@ -1,10 +1,13 @@
-import { EventAttributes } from "ics";
+import { EventAttributes, DurationObject } from "ics";
 import { SchedulePreset } from "./loadPreset";
 import { DateTime } from "luxon";
 
 interface TimeSlot {
-  start: number;
-  duration: number;
+  start: {
+    hours: number;
+    minutes?: number;
+  };
+  duration: DurationObject;
 }
 
 export function presetToCalendaEntry(
@@ -46,14 +49,38 @@ function parseTimeSlots(
         /(?<hour>\d\d):(?<minute>\d\d)/g
       );
 
-      const startHour = Number(startGroup?.hour);
-      const endHour = Number(endGroup?.hour);
+        
+
+      const startHour = parseNumber(startGroup?.hour);
+      const endHour = parseNumber(endGroup?.hour);
+
+      const startMinute = parseNumber(startGroup?.minute);
+      const endMinute = parseNumber(endGroup?.minute);
+
+      const startDateTime = DateTime.now().startOf('day').plus({
+        hour: startHour,
+        minutes: startMinute
+      });
+
+      const endDateTime = DateTime.now().startOf('day').plus({
+        days: (startHour ?? 0) > (endHour ?? 0) ? 1 : 0,
+        hour: endHour,
+        minutes: endMinute
+      })
+
+      const { hours, minutes } = endDateTime.diff(startDateTime, ['hours', 'minutes']);
 
       return [
         key,
         {
-          start: startHour,
-          duration: endHour - startHour,
+          start: {
+            hours: startHour ?? 0,
+            minutes: startMinute,
+          },
+          duration: {
+            hours,
+            minutes,
+          },
         },
       ];
     })
@@ -66,20 +93,69 @@ function prepareEvent({
   groupName,
   slot,
 }: {
-  dayIndex: number,
+  dayIndex: number;
   groupName: string;
   weekStart: DateTime;
   slot: TimeSlot;
 }): EventAttributes {
   const day = weekStart.plus({
-    days: dayIndex
-  })
+    days: dayIndex,
+  });
+
+  const duration: DurationObject = {};
+
+  if (slot.duration.hours) {
+    duration.hours = slot.duration.hours;
+  }
+
+  if (slot.duration.minutes) {
+    duration.minutes = slot.duration.minutes;
+  }
+
+  const start = [
+    day.year,
+    day.month,
+    day.day,
+    slot.start.hours,
+  ] as EventAttributes["start"];
+
+  if (slot.start.minutes) {
+    start.push(slot.start.minutes);
+  }
 
   return {
     title: `⚡️ ${groupName} - Планове відключення`,
-    start: [day.year, day.month, day.day, slot.start],
-    duration: {
-      hours: slot.duration,
-    },
+    start,
+    duration,
   };
+}
+
+function calcDuration(
+  start: number | undefined,
+  end: number | undefined,
+  measure: "hours" | "minutes"
+) {
+  if (
+    typeof start === "undefined" ||
+    typeof end === "undefined" ||
+    start === end
+  ) {
+    return undefined;
+  }
+
+  const cycle = measure === "hours" ? 23 : 60;
+
+  const adjustedEnd = end > start ? end : end + cycle;
+
+  return adjustedEnd - start;
+}
+
+function parseNumber(num: string | undefined) {
+  if (typeof num === "undefined") {
+    return undefined;
+  }
+
+  const result = Number(num);
+
+  return Number.isNaN(result) ? undefined : result;
 }
