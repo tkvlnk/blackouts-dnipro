@@ -15,10 +15,10 @@ export async function loadPreset(): Promise<SchedulePreset> {
   });
 
   // @ts-expect-error
-  const { preset } = await page.evaluate(() => DisconSchedule);
+  const schedule = await page.evaluate(() => DisconSchedule)
 
   await browser.close();
 
-  return preset;
+  return schedule.preset;
 }
 
