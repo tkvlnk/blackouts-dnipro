@@ -83,11 +83,11 @@ function parseTimeSlots(
 }
 
 function prepareEvent({
-                        dayIndex,
-                        weekStart,
-                        groupName,
-                        slot,
-                      }: {
+  dayIndex,
+  weekStart,
+  groupName,
+  slot,
+}: {
   dayIndex: number;
   groupName: string;
   weekStart: DateTime;
