@@ -1,6 +1,7 @@
 import {EventAttributes, DurationObject} from "ics";
 import {SchedulePreset} from "./loadPreset";
 import {DateTime} from "luxon";
+import {UA_TIMEZONE} from "./constants";
 
 interface TimeSlot {
   start: {
@@ -13,7 +14,7 @@ interface TimeSlot {
 export function presetToCalendarEntry(
   preset: SchedulePreset
 ): Record<string, EventAttributes[]> {
-  const weekStart = DateTime.now().setZone("Europe/Kiev").startOf("week").plus({
+  const weekStart = DateTime.now().setZone(UA_TIMEZONE).startOf("week").plus({
     week: 1,
   });
 
@@ -63,7 +64,10 @@ function parseTimeSlots(
         minutes: endMinute
       })
 
-      const {hours, minutes} = endDateTime.diff(startDateTime, ['hours', 'minutes']);
+      const {
+        hours,
+        minutes
+      } = endDateTime.diff(startDateTime, ['hours', 'minutes']);
 
       return [
         key,
