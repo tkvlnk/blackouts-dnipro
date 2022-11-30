@@ -10,7 +10,7 @@ interface TimeSlot {
   duration: DurationObject;
 }
 
-export function presetToCalendaEntry(
+export function presetToCalendarEntry(
   preset: SchedulePreset
 ): Record<string, EventAttributes[]> {
   const weekStart = DateTime.now().setZone("Europe/Kiev").startOf("week").plus({

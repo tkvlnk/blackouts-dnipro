@@ -1,6 +1,6 @@
 import { loadPreset } from "./loadPreset";
 import {createEvents, EventAttributes} from "ics";
-import { presetToCalendaEntry } from "./presetToCalendarEntry";
+import { presetToCalendarEntry } from "./presetToCalendarEntry";
 import fs from "fs/promises";
 
 export async function generateCalendars(eventsByGroups: Record<string, EventAttributes[]>) {

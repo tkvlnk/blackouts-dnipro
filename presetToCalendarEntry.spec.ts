@@ -1,10 +1,10 @@
-import { presetToCalendaEntry } from "./presetToCalendarEntry";
+import { presetToCalendarEntry } from "./presetToCalendarEntry";
 
 jest.useFakeTimers().setSystemTime(new Date(2022, 10, 27));
 
 it("should pass", () => {
   expect(
-    presetToCalendaEntry({
+    presetToCalendarEntry({
       data: {
         "1": {
           "1": [2, 5],
@@ -38,7 +38,7 @@ it("should pass", () => {
         "11": "23:45 - 01:05",
       },
     })
-  ).toEqual<ReturnType<typeof presetToCalendaEntry>>({
+  ).toEqual<ReturnType<typeof presetToCalendarEntry>>({
     "1": [
       {
         title: "⚡️ Група 1 - Планове відключення",
