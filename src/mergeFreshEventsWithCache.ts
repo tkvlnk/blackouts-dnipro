@@ -6,11 +6,20 @@ export function mergeFreshEventsWithCache(cachedEvents: EventAttributes[], fresh
   return [
     ...cachedEvents.filter(event => eventStartDiffInMs(event) < 0),
     ...freshEvents.filter(event => eventStartDiffInMs(event) > 0)
-  ];
+  ].sort((leftEvent, rightEvent) => {
+    const leftMs = eventToStartDateTime(leftEvent).millisecond;
+    const rightMs = eventToStartDateTime(rightEvent).millisecond;
+
+    if (leftMs === rightMs) {
+      return 0;
+    }
+
+    return leftMs > rightMs ? 1 : -1
+  });
 }
 
-function eventStartDiffInMs({start: [year, month, day, hour, minute]}: EventAttributes) {
-  const eventDateTime = DateTime.fromObject({
+function eventToStartDateTime({start: [year, month, day, hour, minute]}: EventAttributes): DateTime {
+  return DateTime.fromObject({
     year,
     month,
     day,
@@ -18,7 +27,11 @@ function eventStartDiffInMs({start: [year, month, day, hour, minute]}: EventAttr
     minute,
   }, {
     zone: UA_TIMEZONE
-  });
+  })
+}
+
+function eventStartDiffInMs(event: EventAttributes) {
+  const eventDateTime = eventToStartDateTime(event);
 
   const {milliseconds} = eventDateTime.diffNow('milliseconds');
 

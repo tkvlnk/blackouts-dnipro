@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Tit Kovalenko",
   "license": "MIT",
+  "scripts": {
+    "build": "npx ts-node updateCalendarFile.ts"
+  },
   "dependencies": {
     "@tsconfig/recommended": "^1.0.1",
     "@types/jest": "^29.2.3",
