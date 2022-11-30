@@ -14,9 +14,7 @@ interface TimeSlot {
 export function presetToCalendarEntry(
   preset: SchedulePreset
 ): Record<string, EventAttributes[]> {
-  const weekStart = DateTime.now().setZone(UA_TIMEZONE).startOf("week").plus({
-    week: 1,
-  });
+  const weekStart = DateTime.now().setZone(UA_TIMEZONE).startOf("week");
 
   const parsedSlots = parseTimeSlots(preset.time_zone);
 
@@ -25,13 +23,24 @@ export function presetToCalendarEntry(
       [
         groupKey,
         Object.entries(groupDays).flatMap(([day, slots]) =>
-          slots.map<EventAttributes>((slotKey) =>
-            prepareEvent({
-              dayIndex: parseInt(day, 10) - 1,
-              groupName: preset.sch_names[groupKey],
-              weekStart,
-              slot: parsedSlots[slotKey.toString()],
-            })
+          slots.flatMap<EventAttributes>((slotKey) => {
+              const eventBase = {
+                dayIndex: parseInt(day, 10) - 1,
+                groupName: preset.sch_names[groupKey],
+                slot: parsedSlots[slotKey.toString()],
+              };
+
+              return [
+                prepareEvent({
+                  ...eventBase,
+                  weekStart,
+                }),
+                prepareEvent({
+                  ...eventBase,
+                  weekStart: weekStart.plus({week: 1}),
+                })
+              ];
+            }
           )
         ),
       ])

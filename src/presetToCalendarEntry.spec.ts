@@ -1,6 +1,6 @@
-import { presetToCalendarEntry } from "./presetToCalendarEntry";
+import {presetToCalendarEntry} from "./presetToCalendarEntry";
 
-jest.useFakeTimers().setSystemTime(new Date(2022, 10, 27));
+jest.useFakeTimers().setSystemTime(new Date(2022, 10, 28));
 
 it("should pass", () => {
   expect(
@@ -43,24 +43,44 @@ it("should pass", () => {
       {
         title: "⚡️ Група 1 - Планове відключення",
         start: [2022, 11, 28, 0],
-        duration: { hours: 4 },
+        duration: {hours: 4},
+      },
+      {
+        title: "⚡️ Група 1 - Планове відключення",
+        start: [2022, 12, 5, 0],
+        duration: {hours: 4},
       },
       {
         title: "⚡️ Група 1 - Планове відключення",
         start: [2022, 11, 28, 9],
-        duration: { hours: 4 },
+        duration: {hours: 4},
+      },
+      {
+        title: "⚡️ Група 1 - Планове відключення",
+        start: [2022, 12, 5, 9],
+        duration: {hours: 4},
       },
       {
         title: "⚡️ Група 1 - Планове відключення",
         start: [2022, 11, 29, 3],
-        duration: { hours: 4 },
+        duration: {hours: 4},
+      },
+      {
+        title: "⚡️ Група 1 - Планове відключення",
+        start: [2022, 12, 6, 3],
+        duration: {hours: 4},
       },
     ],
     "2": [
       {
         title: "⚡️ Група 2 - Планове відключення",
         start: [2022, 11, 28, 0],
-        duration: { hours: 1 },
+        duration: {hours: 1},
+      },
+      {
+        title: "⚡️ Група 2 - Планове відключення",
+        start: [2022, 12, 5, 0],
+        duration: {hours: 1},
       },
     ],
     "0": [
@@ -73,7 +93,22 @@ it("should pass", () => {
       },
       {
         title: expect.any(String),
+        start: [2022, 12, 7, 22, 30],
+        duration: {
+          minutes: 30
+        }
+      },
+      {
+        title: expect.any(String),
         start: [2022, 12, 4, 23, 45],
+        duration: {
+          hours: 1,
+          minutes: 20
+        }
+      },
+      {
+        title: expect.any(String),
+        start: [2022, 12, 11, 23, 45],
         duration: {
           hours: 1,
           minutes: 20
