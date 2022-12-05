@@ -2,6 +2,8 @@ name: update-schedules
 on:
   schedule:
     - cron: '15 0 * * *'
+  workflow_dispatch:
+
 jobs:
   build:
 
@@ -24,3 +26,4 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
