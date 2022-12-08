@@ -11,7 +11,7 @@ void (async () => {
     Object.entries(eventsByGroups).map(async ([groupKey, freshEvents]) => {
       const cachedEvents = await getCachedEvents(groupKey);
       const events = mergeFreshEventsWithCache(cachedEvents, freshEvents);
-      const fileContent = await generateCalendars(events);
+      const fileContent = enrichWithCalendarMetaInfo(await generateCalendars(events), groupKey)
       await Promise.all([
         saveCalendarFile(groupKey, fileContent),
         saveEventsCache(groupKey, events),
@@ -54,4 +54,21 @@ async function saveEventsCache(groupKey: string, events: EventAttributes[]): Pro
 
 async function saveCalendarFile(groupKey: string, fileContent: string): Promise<void> {
   await fs.writeFile(calendarFileName(groupKey), fileContent);
+}
+
+function enrichWithCalendarMetaInfo(iCalStr: string, groupKey: string): string {
+  const separator = '\r\n'
+
+  const calendarHead = [
+    `BEGIN:VCALENDAR`,
+    `VERSION:2.0`
+  ].join(separator)
+
+  return iCalStr.replace(calendarHead,
+    [
+      calendarHead,
+      `X-WR-CALNAME:Відключення Дніпро - Група ${groupKey}`,
+      'X-WR-TIMEZONE;VALUE=TEXT:Europe/Kiev'
+    ].join('\r\n')
+  )
 }
