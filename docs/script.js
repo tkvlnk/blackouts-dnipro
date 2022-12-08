@@ -30,7 +30,11 @@ function createButton(id) {
 function createAnchor(id) {
   const anch = document.createElement('a');
   anch.textContent = `Група ${id}`;
-  anch.href = `webcal://${location.hostname}${location.pathname}group-${id}.ics`;
+
+  const url = new URL(`webcal://${location.hostname}${location.pathname}group-${id}.ics`)
+  url.searchParams.append('title', `Відключення Дніпро - Група ${1}`)
+  anch.href = url.toString();
+
   return anch;
 }
 
