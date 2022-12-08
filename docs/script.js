@@ -32,7 +32,7 @@ function createAnchor(id) {
   anch.textContent = `Група ${id}`;
 
   const url = new URL(`webcal://${location.hostname}${location.pathname}group-${id}.ics`)
-  url.searchParams.append('title', `Відключення Дніпро - Група ${1}`)
+  url.searchParams.append('ts', Date.now().toString())
   anch.href = url.toString();
   anch.target = '_blank';
 
