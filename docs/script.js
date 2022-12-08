@@ -34,6 +34,7 @@ function createAnchor(id) {
   const url = new URL(`webcal://${location.hostname}${location.pathname}group-${id}.ics`)
   url.searchParams.append('title', `Відключення Дніпро - Група ${1}`)
   anch.href = url.toString();
+  anch.target = '_blank';
 
   return anch;
 }
