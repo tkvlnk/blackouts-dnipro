@@ -56,7 +56,6 @@ function waitFor<V>(page: Page, tryGetValue: () => Promise<V | null>, {timeout =
     do {
       value = await tryGetValue();
       await new Promise(res => setTimeout(res, 5000));
-      console.log('>__value:::', value)
     } while (value == null && (Date.now() - startTs < timeout));
 
     if (value) {

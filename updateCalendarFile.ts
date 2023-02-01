@@ -30,12 +30,16 @@ export async function generateCalendars(events: EventAttributes[]) {
   return firstGroupCalStr.value;
 }
 
+function groupKeyToPathFragment(groupKey: string) {
+  return groupKey.replace(/\D/g, '')
+}
+
 function cacheEventsFilename(groupKey: string) {
-  return `cache/events-${groupKey}.json`;
+  return `cache/events-${groupKeyToPathFragment(groupKey)}.json`;
 }
 
 function calendarFileName(groupKey: string) {
-  return `docs/group-${groupKey}.ics`
+  return `docs/group-${groupKeyToPathFragment(groupKey)}.ics`
 }
 
 async function getCachedEvents(groupKey: string): Promise<EventAttributes[]> {
