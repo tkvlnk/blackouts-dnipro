@@ -18,33 +18,39 @@ export function presetToCalendarEntry(
 
   const parsedSlots = parseTimeSlots(preset.time_zone);
 
-  return Object.fromEntries(
-    Object.entries(preset.data).map(([groupKey, groupDays]) =>
-      [
-        groupKey,
-        Object.entries(groupDays).flatMap(([day, slots]) =>
-          slots.flatMap<EventAttributes>((slotKey) => {
-              const eventBase = {
-                dayIndex: parseInt(day, 10) - 1,
-                groupName: preset.sch_names[groupKey],
-                slot: parsedSlots[slotKey.toString()],
-              };
+  const result = {} as Record<string, EventAttributes[]>;
 
-              return [
-                prepareEvent({
-                  ...eventBase,
-                  weekStart,
-                }),
-                prepareEvent({
-                  ...eventBase,
-                  weekStart: weekStart.plus({week: 1}),
-                })
-              ];
-            }
-          )
-        ),
-      ])
-  );
+  for (const [groupKey, groupDays] of Object.entries(preset.data)) {
+    result[preset.sch_names[groupKey]] ??= [];
+    result[preset.sch_names[groupKey]].push(...Object.entries(groupDays).flatMap(([day, slots]) =>
+      Object.entries(slots).flatMap<EventAttributes>(([slotKey, slotValue]) => {
+          if (slotValue === 'yes') {
+            return []
+          }
+
+          const eventBase = {
+            dayIndex: parseInt(day, 10) - 1,
+            groupName: preset.sch_names[groupKey],
+            slot: parsedSlots[slotKey.toString()],
+            planned: slotValue === 'no'
+          };
+
+          return [
+            prepareEvent({
+              ...eventBase,
+              weekStart,
+            }),
+            prepareEvent({
+              ...eventBase,
+              weekStart: weekStart.plus({week: 1}),
+            })
+          ];
+        }
+      )
+    ))
+  }
+
+  return result;
 }
 
 function parseTimeSlots(
@@ -52,25 +58,21 @@ function parseTimeSlots(
 ): Record<string, TimeSlot> {
   return Object.fromEntries(
     Object.entries(zones).map(([key, periodStr]) => {
-      const [{groups: startGroup}, {groups: endGroup}] = periodStr.matchAll(
-        /(?<hour>\d\d):(?<minute>\d\d)/g
-      );
+      const [startHourRaw, endHourRaw] = periodStr.split('-');
 
-      const startHour = parseNumber(startGroup?.hour);
-      const endHour = parseNumber(endGroup?.hour);
+      const startHour = parseNumber(startHourRaw);
+      const endHour = parseNumber(endHourRaw);
 
-      const startMinute = parseNumber(startGroup?.minute);
-      const endMinute = parseNumber(endGroup?.minute);
 
       const startDateTime = DateTime.now().startOf('day').plus({
         hour: startHour,
-        minutes: startMinute
+        minutes: 0
       });
 
       const endDateTime = DateTime.now().startOf('day').plus({
         days: (startHour ?? 0) > (endHour ?? 0) ? 1 : 0,
         hour: endHour,
-        minutes: endMinute
+        minutes: 0
       })
 
       const {
@@ -83,7 +85,7 @@ function parseTimeSlots(
         {
           start: {
             hours: startHour ?? 0,
-            minutes: startMinute,
+            minutes: 0,
           },
           duration: {
             hours,
@@ -100,11 +102,13 @@ function prepareEvent({
   weekStart,
   groupName,
   slot,
+  planned,
 }: {
   dayIndex: number;
   groupName: string;
   weekStart: DateTime;
   slot: TimeSlot;
+  planned: boolean;
 }): EventAttributes {
   const day = weekStart.plus({
     days: dayIndex,
@@ -132,7 +136,7 @@ function prepareEvent({
   }
 
   return {
-    title: `⚡️ ${groupName} - Планове відключення`,
+    title: `⚡️ ${groupName} - ${planned ? 'Планове' : 'Можливе'} відключення`,
     start,
     duration,
   };

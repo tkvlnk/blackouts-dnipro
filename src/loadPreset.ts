@@ -1,9 +1,27 @@
 import puppeteer, {Page, TimeoutError} from "puppeteer";
 
 export interface SchedulePreset {
-  sch_names: Record<string, string>;
-  time_zone: Record<string, string>;
-  data: Record<string, Record<string, number[]>>;
+  days: {
+    [dayId: string]: string
+  }
+  time_type: {
+    "yes": "Світло є",
+    "maybe": "Можливо відключення",
+    "no": "Світла немає"
+  },
+  sch_names: {
+    [schId: string]: string
+  };
+  time_zone: {
+    [timeZoneId: string]: string
+  };
+  data: {
+    [schId: string]: {
+      [dayId: string]: {
+        [timeZoneId: string]: keyof SchedulePreset['time_type']
+      }
+    }
+  };
 }
 
 declare global {
