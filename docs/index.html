@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Графіки відключення у Дніпрі</title>
-    <script src="script.js" defer lang="text/javascript"></script>
+  <meta charset="utf-8">
+  <title>Графіки відключення у Дніпрі</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer lang="text/javascript"></script>
 </head>
 <body>
-<h1>Графіки відключення у Дніпрі</h1>
-<p>
-    Інформація взята і оновлюється з сайту <a
-        href="https://www.dtek-dnem.com.ua/ua/shutdowns">ДТЕК Дніпровські
-    Електромережі</a>.
-</p>
-<p>
-    Також там можна дізнатися до якої групи належить ваш будинок.
-</p>
-<p id="group-1"></p>
-<p id="group-2"></p>
-<p id="group-3"></p>
+<div class="container mx-auto w-max">
+  <h1 class="text-2xl font-bold mt-16 text-center">Графіки відключення у
+    Дніпрі</h1>
+
+  <div class="mt-8 mb-8">
+    <p>
+      Інформація взята і оновлюється з сайту <a
+      class="text-indigo-700 underline"
+      href="https://www.dtek-dnem.com.ua/ua/shutdowns">ДТЕК Дніпровські
+      Електромережі</a>.
+    </p>
+    <p>
+      Також там можна дізнатися до якої групи належить ваш будинок.
+    </p>
+  </div>
+
+  <div class="grid gap-6 grid-cols-1 justify-items-center">
+    <p id="group-1" class="flex gap-4 items-center"></p>
+    <p id="group-2" class="flex gap-4 items-center"></p>
+    <p id="group-3" class="flex gap-4 items-center"></p>
+  </div>
+
+</div>
 </body>
 </html>
 
