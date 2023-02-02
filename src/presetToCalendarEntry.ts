@@ -2,6 +2,7 @@ import {EventAttributes, DurationObject} from "ics";
 import {SchedulePreset} from "./loadPreset";
 import {DateTime} from "luxon";
 import {UA_TIMEZONE} from "./constants";
+import {mergeOverlappingEvents} from "./mergeOverlappingEvents";
 
 interface TimeSlot {
   start: {
@@ -22,7 +23,8 @@ export function presetToCalendarEntry(
 
   for (const [groupKey, groupDays] of Object.entries(preset.data)) {
     result[preset.sch_names[groupKey]] ??= [];
-    result[preset.sch_names[groupKey]].push(...Object.entries(groupDays).flatMap(([day, slots]) =>
+
+    const events = Object.entries(groupDays).flatMap(([day, slots]) =>
       Object.entries(slots).flatMap<EventAttributes>(([slotKey, slotValue]) => {
           if (slotValue === 'yes') {
             return []
@@ -47,7 +49,9 @@ export function presetToCalendarEntry(
           ];
         }
       )
-    ))
+    )
+
+    result[preset.sch_names[groupKey]].push(...mergeOverlappingEvents(events))
   }
 
   return result;

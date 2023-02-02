@@ -1,6 +1,7 @@
 {
-  "extends": "@tsconfig/node16/tsconfig",
+  "extends": "@tsconfig/recommended",
   "compilerOptions": {
+    "target": "ES2022",
     "resolveJsonModule": true,
     "lib": ["DOM"]
   }
