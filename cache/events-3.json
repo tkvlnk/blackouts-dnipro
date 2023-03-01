@@ -2811,448 +2811,6 @@
     "title": "⚡️ Група 3 - Планове відключення",
     "start": [
       2023,
-      3,
-      1,
-      12
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "gRE9-aWuYY2mvww9DXCU6"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      1,
-      21
-    ],
-    "duration": {
-      "hours": 3
-    },
-    "uid": "ozviEObMOVHBXkqjv6o0o"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      2,
-      0
-    ],
-    "duration": {
-      "hours": 1
-    },
-    "uid": "cH1UTJaSGoXb_kSJxb_XD"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      2,
-      6
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "ZwGcvd_Vh7d_8i3JeiLOD"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      2,
-      15
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "V7Y29ZkNSqgPLn5poUMiC"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      3,
-      0
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "HCbqhe9mFuxuUnsQkOKnr"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      3,
-      9
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "5ufU85tg49uNpXKhPjz4E"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      3,
-      18
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "PBWSNGWdN3XmPDvMO31ne"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      4,
-      3
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "SnnDqNMqaC0aCOTEkjraP"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      4,
-      12
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "6zbmOlwIk-gEbHGsNRX5E"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      4,
-      21
-    ],
-    "duration": {
-      "hours": 3
-    },
-    "uid": "jGVX2VTzfhdr0GNHHEz5m"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      5,
-      0
-    ],
-    "duration": {
-      "hours": 1
-    },
-    "uid": "s6o0Hmjk8l3WvcZaQhZL2"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      5,
-      6
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "tjN9f-VFScYesL-i9bgiT"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      5,
-      15
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "QOAmPvcUL1fIfxWMMl4-Z"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      6,
-      6
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "PmhmE3PXVqQ1MY3XiksWy"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      6,
-      15
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "27uNmJjWY4RyezTlqRc4G"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      7,
-      0
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "IUnplbqxzl5P8OOdnR3TW"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      7,
-      9
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "sg1bbr5tjV-GjMt0bOJY0"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      7,
-      18
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "I9ndQYCMSFH73VzY9HnM1"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      8,
-      3
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "XLRDE8p3Qbzs4S9KNiJhK"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      8,
-      12
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "f7d2CtfNSVZgppCecsOI5"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      8,
-      21
-    ],
-    "duration": {
-      "hours": 3
-    },
-    "uid": "XrxhuszQmD3NijSj40tay"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      9,
-      0
-    ],
-    "duration": {
-      "hours": 1
-    },
-    "uid": "68i9msvqkidrBd58owMma"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      9,
-      6
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "VrhFXzi218bzAYd4WlRyy"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      9,
-      15
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "CAIJaAOTEjUe5U8emEbD6"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      10,
-      0
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "ZoBbh3MZCme_x34reTzWM"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      10,
-      9
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "vuEHMr8WN6k70eA0IYrmy"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      10,
-      18
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "4VbH5EdHl04tcyBBuzyFS"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      11,
-      3
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "lqiorWtrG2N3Oh28A0Mgj"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      11,
-      12
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "yMJ64am7Y_bnSlHaEOqLr"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      11,
-      21
-    ],
-    "duration": {
-      "hours": 3
-    },
-    "uid": "dszqQtAUdlQl-9J8vgQ4I"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      12,
-      0
-    ],
-    "duration": {
-      "hours": 1
-    },
-    "uid": "n0s-NZXbgftL0VBiFz3d1"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      12,
-      6
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "MgLgV40wPauMpTB-RVFvT"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
-      3,
-      12,
-      15
-    ],
-    "duration": {
-      "hours": 4
-    },
-    "uid": "hvo_hj_GFhrThvkT8y2Xr"
-  },
-  {
-    "title": "⚡️ Група 3 - Планове відключення",
-    "start": [
-      2023,
       2,
       28,
       12
@@ -3268,12 +2826,454 @@
       2023,
       3,
       1,
+      12
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "dBi0HzxWT6UZh0sjclazP"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      1,
+      21
+    ],
+    "duration": {
+      "hours": 3
+    },
+    "uid": "0UQ21RMfMsVa3vWd2Kjue"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      2,
+      0
+    ],
+    "duration": {
+      "hours": 1
+    },
+    "uid": "eGY6HLpW5vIbyYCsHKUCi"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      2,
+      6
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "s00ik7Hmm2Iwo1bZmxrmn"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      2,
+      15
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "5bC60STszzV1BaOnYTSNe"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      3,
+      0
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "TrARA0lXp_I9zHZ8kJdgY"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      3,
+      9
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "rnUvQRVg18mzz5DtX2k89"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      3,
+      18
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "UzvKwiRR3SfNDrSHEZUQO"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      4,
+      3
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "bhpNz18QtubXi5EyHhpoJ"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      4,
+      12
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "idfnEIquo1vFTg8SvN7cD"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      4,
+      21
+    ],
+    "duration": {
+      "hours": 3
+    },
+    "uid": "kl3_23AeuRxZmqtYVnJc4"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      5,
+      0
+    ],
+    "duration": {
+      "hours": 1
+    },
+    "uid": "V6dOhGCxTge3urJMn6yQd"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      5,
+      6
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "oYDNKg78VxMPXF99FU8Tx"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      5,
+      15
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "x8QSCbMtz8vHPc7kTzoN6"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      6,
+      6
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "KD7EaSj5xDVqa3FVQqeW5"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      6,
+      15
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "toG9rNY7vQ75qVUI_WE-f"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      7,
+      0
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "02HY_MRX9tO0ImTsUa8u9"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      7,
+      9
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "1RtQoLMbxqJzb6lwofoaU"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      7,
+      18
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "Z0TdkkVOJztddneQiX4CI"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      8,
+      3
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "n2Igz6o50s8VpEiYbwf78"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      8,
+      12
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "Z-zuIumfVBmR9RzmOqSXC"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      8,
+      21
+    ],
+    "duration": {
+      "hours": 3
+    },
+    "uid": "x9XP6fFQgJ8zAWPOPcOId"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      9,
+      0
+    ],
+    "duration": {
+      "hours": 1
+    },
+    "uid": "vEJr2RATpbtbG5BRZK6aX"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      9,
+      6
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "GsnnV1rONax29Bdek6pDs"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      9,
+      15
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "TGwn1soDPhDv0X6_u6umv"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      10,
+      0
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "ftWt_7JBL70XTT7a1cAai"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      10,
+      9
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "a32WL2h2i6lQjTwXWfLfX"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      10,
+      18
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "Rw6BRlbIiLkbVAyQBIneT"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      11,
+      3
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "fy4aEIHRm2CusTodJVEM5"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      11,
+      12
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "12TAtcL9NWLbj1xrQ6FIN"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      11,
+      21
+    ],
+    "duration": {
+      "hours": 3
+    },
+    "uid": "4cFDqftRgaxN7AZ9BpPLF"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      12,
+      0
+    ],
+    "duration": {
+      "hours": 1
+    },
+    "uid": "_WtSL32tuBHSgPBo1k91F"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      12,
+      6
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "7VXBecSt1vKKiv51CqRgd"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      12,
+      15
+    ],
+    "duration": {
+      "hours": 4
+    },
+    "uid": "lYyHRBMav8nCtnsvjxI5R"
+  },
+  {
+    "title": "⚡️ Група 3 - Планове відключення",
+    "start": [
+      2023,
+      3,
+      1,
       8
     ],
     "duration": {
       "hours": 4
     },
-    "uid": "jLEePdc10IQt90ou60n9w"
+    "uid": "Tmx_J6ybHKBt9U-t-VNgQ"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3286,7 +3286,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "dLSNI8dkI6y6cc6b0DPKD"
+    "uid": "1nNIrYzYlugVLKbrRixps"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3299,7 +3299,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "u2ZMiKymTcmg_BpIWnRj4"
+    "uid": "j3bh5bJ0L_DPdsIKE-Y4Y"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3312,7 +3312,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "Pl89giZotTmpooe2bxRAC"
+    "uid": "Nc4Pu-YbsIdfPD5uQNyQ3"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3325,7 +3325,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "5NaSA5jpsl2MyuhgzFl4G"
+    "uid": "6hwPhi99Gf-SUgbm6RqBp"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3338,7 +3338,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "ddLw4ZeNdWUMa7XGd3VVe"
+    "uid": "ViiM6oTnenLR0OWqXzZU1"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3351,7 +3351,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "p2k-7yek0u7_gmVHJ_NEo"
+    "uid": "EZ9EW1XdtEi9ncTDJ7Ilp"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3364,7 +3364,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "wySEdjelH59slS6og03k9"
+    "uid": "t-RQ4QQnemW1k9L8tZD5X"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3377,7 +3377,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "QuCGf9OXuDJpayrk2UcNX"
+    "uid": "sRQFKCrCX05i3UJ0Ds1jQ"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3390,7 +3390,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "x0ZY4s5tqIdMobmssBatD"
+    "uid": "ElGbEEe54LP9gCAvrYn7c"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3403,7 +3403,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "1FO5ZSMCtbvvhN2FkohEZ"
+    "uid": "ETUXhQdfCnFZg_0DsBW4s"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3416,7 +3416,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "lyqkB3wUTCh_VXs0GSlpQ"
+    "uid": "Q9Fz9uJNAJxKSrndOMVw2"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3429,7 +3429,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "lBUPAJ9vUFqggoo9qNqtW"
+    "uid": "oxeJWFkDmA1UgayGQt1vt"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3442,7 +3442,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "PSwGZc6VIOXyY9VoaAqZ5"
+    "uid": "aPYPZASRYIRabzG8m0TdL"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3455,7 +3455,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "MhebGerDV3M-uhJf8LOVl"
+    "uid": "SKoiW1uyDTJ2-SQqdt6CJ"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3468,7 +3468,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "3vh0PJXLCzEvCJbLS-pAW"
+    "uid": "tG2uq_7ftxTf-qGvO8_uQ"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3481,7 +3481,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "plV1ixGf-R2mZFTeQJqNS"
+    "uid": "Jf6mK0OG8crr5N0MGHkKI"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3494,7 +3494,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "Jm-YB_HkWyF2jBfM-kWnH"
+    "uid": "AXV9Q1W5r1826EWP0gkdE"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3507,7 +3507,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "uRPSOgyoCrfw2ZusChiu9"
+    "uid": "UeCTa-kFw_PqXrTw-twrC"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3520,7 +3520,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "kou0y0QgK_1MD2q4E9GSB"
+    "uid": "VJ79kzK-GJUvornLr2wwv"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3533,7 +3533,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "XmiPhgUssLynBu9OpAuEr"
+    "uid": "rlyk3UgMAxsgks6NYCedQ"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3546,7 +3546,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "LqZ-J1sImaISAh3_kyuUG"
+    "uid": "70T5qFdCT8OMWC9S56vDj"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3559,7 +3559,7 @@
     "duration": {
       "hours": 4
     },
-    "uid": "L-Ji9-iG8GAJK-Fm_x4mw"
+    "uid": "lisN3Pa6JNDmUrraUcRQD"
   },
   {
     "title": "⚡️ Група 3 - Планове відключення",
@@ -3572,6 +3572,6 @@
     "duration": {
       "hours": 4
     },
-    "uid": "BAmzkqaNDyL0m5lawPZGN"
+    "uid": "-xBX_wROh3aSYcC-FMyNF"
   }
 ]
